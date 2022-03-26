@@ -1,0 +1,1 @@
+http://allaboutscala.com/tutorials/scala-exercises-solutions/
