@@ -20,7 +20,7 @@ class Utils {
     var statisticsStore = Map[String, Integer]()
     for (line <- fileContent){
       for (word <- line){
-        if (!word.isBlank)
+        if (word.nonEmpty)
           statisticsStore += word -> (statisticsStore.getOrElse(word, 0).asInstanceOf[Int]+1)
       }
     }

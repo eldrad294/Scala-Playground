@@ -12,7 +12,7 @@ object Main {
     fileContent
       .map(
         x => x.map(
-          y => if (y.isBlank) "EMPTY" else y
+          y => if (y.isEmpty) "EMPTY" else y
         ))
       .take(5)
       .foreach(
